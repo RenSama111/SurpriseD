@@ -33,6 +33,25 @@ body {
     display: none;
 }
 
+/* Music Play Button */
+#musicPlayButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+#musicPlayButton:hover {
+    transform: scale(1.1);
+}
+
 /* Valentine Card */
 #card-container {
     width: 400px;
@@ -47,6 +66,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    font-size: 13px;
 }
 
 /* Floating Images */
@@ -63,10 +83,10 @@ body {
 /* Yes/No Buttons - Resized & Colored */
 #yesButton, #noButton {
     font-family: 'Dancing Script', cursive;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 15px 50px;
-    border-radius: 25px;
+    padding: 10px 30px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
