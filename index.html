@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Click to Open Message Box -->
+    <div id="clickToOpen">
+        <p>💌 Click to Open 💌</p>
+    </div>
+
+    <!-- Pop-up Valentine Card -->
+    <div id="card-container" class="hidden">
+        <h1 id="messageText">Will you be my Valentine? 💖</h1>
+        <button id="yesButton">Yes 💘</button>
+        <button id="noButton">No 💔</button>
+    </div>
+
+    <!-- Appreciation Message Box (Initially Hidden) -->
+    <div id="appreciationBox" class="hidden">
+        <h1>Thank you, my love! 💖🌸</h1>
+        <p>You are the most wonderful person in my life. Your smile brightens my day, and your love fills my heart with endless joy. I cherish every moment with you! 💕💫</p>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div id=“heartContainer"></div>
+
+<!-- Floating Images -->
+    <div id="image-container">
+        <img src="img1.jpg" class="movingImage">
+        <img src="img2.jpg" class="movingImage">
+        <img src="img3.jpg" class="movingImage">
+        <img src="img4.jpg" class="movingImage">
+        <img src="img5.jpg" class="movingImage">
+        <img src="img6.jpg" class="movingImage">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

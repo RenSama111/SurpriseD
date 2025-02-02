@@ -1,0 +1,140 @@
+/* General Page Styling */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Click to Open Box */
+#clickToOpen {
+    background-color: rgb(230, 230, 250);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}
+
+/* Valentine Card */
+#card-container {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(230, 230, 250);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Floating Images */
+.movingImage {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Yes/No Buttons - Resized & Colored */
+#yesButton, #noButton {
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin: 10px;
+}
+
+/* Yes Button - Green */
+#yesButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#yesButton:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* No Button - Red */
+#noButton {
+    background-color: #dc3545;
+    color: white;
+    position: absolute;
+}
+
+#noButton:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+/* Appreciation Message Box */
+#appreciationBox {
+    width: 450px;
+    height: auto;
+    background-color: rgb(230, 230, 250);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Floating Hearts */
+.heart {
+    position: absolute;
+    font-size: 68px;
+    color: red;
+    animation: floatHeart 3s infinite ease-in-out;
+}
+
+@keyframes floatHeart {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-50px); opacity: 0.8; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
+
+/* Floating Flowers */
+.flower {
+    position: absolute;
+    font-size: 36px;
+    animation: flowerGlow 2s infinite alternate ease-in-out;
+}
+
+/* Glowing Effect for Magical Look */
+@keyframes flowerGlow {
+    0% { filter: drop-shadow(0px 0px 5px rgba(255, 192, 203, 0.5)); }
+    100% { filter: drop-shadow(0px 0px 15px rgba(255, 105, 180, 0.8)); }
+}
