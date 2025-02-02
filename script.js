@@ -1,7 +1,21 @@
 // Ensure Music & Hearts Start on Page Load
 window.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('backgroundMusic').play().catch(error => console.log("Autoplay blocked."));
+    let music = document.getElementById('backgroundMusic');
+    let playButton = document.getElementById('musicPlayButton');
+
+    // Try autoplay, show button if blocked
+    music.play().catch(() => {
+        playButton.classList.remove('hidden'); // Show button if autoplay is blocked
+    });
+
     createHeartsLoop();
+});
+
+// Handle Play Button Click
+document.getElementById('musicPlayButton').addEventListener('click', function () {
+    let music = document.getElementById('backgroundMusic');
+    music.play();
+    this.classList.add('hidden'); // Hide button after play
 });
 
 // Show Yes/No Question on Click
@@ -47,7 +61,7 @@ document.getElementById('yesButton').addEventListener('click', function(event) {
 // Function to create a flower explosion effect
 function createFlowerExplosion(startX, startY) {
     const flowerEmojis = ['🌸', '🌻', '🌼', '🌷', '💐'];
-    const totalFlowers = 350; // Number of flowers for explosion
+    const totalFlowers = 200; // Number of flowers for explosion
 
     for (let i = 0; i < totalFlowers; i++) {
         let flower = document.createElement('div');
