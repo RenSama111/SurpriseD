@@ -10,9 +10,12 @@
 <body>
 
     <!-- Background Music -->
-    <audio id="backgroundMusic" autoplay loop>
+    <audio id="backgroundMusic" loop>
         <source src="music.mp3" type="audio/mp3">
     </audio>
+
+    <!-- Music Play Button (Appears if autoplay is blocked) -->
+    <button id="musicPlayButton" class="hidden">🔊 Play Music</button>
 
     <!-- Click to Open Message Box -->
     <div id="clickToOpen">
@@ -21,21 +24,21 @@
 
     <!-- Pop-up Valentine Card -->
     <div id="card-container" class="hidden">
-        <h1 id="messageText">Will you be my Valentine? 💖</h1>
+        <h1 id="messageText">In a world full of moments, the ones with you mean the most. 💖 Will you be my Valentine? 💖</h1>
         <button id="yesButton">Yes 💘</button>
         <button id="noButton">No 💔</button>
     </div>
 
-    <!-- Appreciation Message Box (Initially Hidden) -->
+    <!-- Appreciation Message Box -->
     <div id="appreciationBox" class="hidden">
         <h1>Thank you, my love! 💖🌸</h1>
-        <p>You are the most wonderful person in my life. Your smile brightens my day, and your love fills my heart with endless joy. I cherish every moment with you! 💕💫</p>
+        <p>“In your presence, time seems to stand still, and every moment becomes a cherished memory. 💖 You are the melody that brightens my days, the warmth that soothes my soul. Every laugh we share, every quiet moment, feels like a gift I never want to end. Thank you for filling my life with love, light, and endless joy. 🌸 You are my happiness, and I’m grateful for you every single day.”</p>
     </div>
 
     <!-- Floating Hearts -->
-    <div id=“heartContainer"></div>
+    <div id="heartContainer"></div>
 
-<!-- Floating Images -->
+    <!-- Floating Images -->
     <div id="image-container">
         <img src="img1.jpg" class="movingImage">
         <img src="img2.jpg" class="movingImage">
